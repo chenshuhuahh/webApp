@@ -1,0 +1,49 @@
+//http://matchweb.sports.qq.com/html/matchDetail?mid=100002:2365
+//http://matchweb.sports.qq.com/kbs/teamSupport?mid=100002:2365&type=1
+//http://matchweb.sports.qq.com/html/matchStatV37?mid=100002:2365
+[
+  0,
+  {
+    "matchInfo": {
+      "startTime": "2016-07-23 09:00:00",
+      "mid": "100002:2365",
+      "matchType": "3",
+      "matchDesc": "\u7537\u7bee\u70ed\u8eab\u8d5b",
+      "leftId": "",
+      "leftName": "\u7f8e\u56fd\u7537\u7bee",
+      "leftBadge": "http:\/\/inews.gtimg.com\/newsapp_ls\/0\/308983518\/0.jpg",
+      "leftGoal": "111",
+      "leftHasUrl": "",
+      "rightId": "",
+      "rightName": "\u963f\u6839\u5ef7",
+      "rightBadge": "http:\/\/f.seals.qq.com\/filestore\/10006\/da\/64\/87\/0\/sportlogo\/team_1_632.png?v=6",
+      "rightGoal": "74",
+      "rightHasUrl": "",
+      "matchPeriod": "2",
+      "quarter": "",
+      "quarterTime": "",
+      "liveType": "4",
+      "livePeriod": "2"
+    },
+    "liveId": "100204900",
+    "matchPic": "http:\/\/inews.gtimg.com\/newsapp_ls\/0\/433633996_1242698\/0",
+    "onlineCnt": "2217401",
+    "liveIdPictureWord": "40006346",
+    "targetId": "1466347263",
+    "updateFrequency": "1800",
+    "quarterDesc": "",
+    "tabSwitchGuess": "1",
+    "isPay": "0",
+    "roseNewsId": "SPO2016072204185000",
+    "programId": "9193",
+    "competitionId": "100002",
+    "tvLiveId": "100204900",
+    "ad": {},
+    "rightSupport": "4871",
+    "leftSupport": "22216",
+    "neuSupport": "24",
+    "ifHasVideo": "1",
+    "isDisabled": "0"
+  },
+  ""
+]

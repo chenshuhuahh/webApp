@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>webapp实例</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.min.css">
+    <link rel="stylesheet/less" type="text/css" href="css/index.less">
+    <script type="text/javascript" src="js/less-2.5.3.min.js"></script>
+</head>
+<body>
+<section class="main" id="main">
+    <!--HEADER-->
+    <header class="header">
+        <div class="con">
+            <h1 class="logo">腾讯体育</h1>
+            <span class="type">NBA</span>
+            <span class="menu"></span>
+            <span class="login">登录</span>
+        </div>
+        <!--NAV-->
+        <nav class="nav">
+            <a href="#">NBA</a>
+            <a href="#">CBA</a>
+            <a href="#">英超</a>
+            <a href="#">欧冠</a>
+            <a href="#">亚冠</a>
+            <a href="#">西甲</a>
+            <a href="#">德甲</a>
+            <a href="#">意甲</a>
+            <a href="#">法甲</a>
+            <a href="#">中超</a>
+            <a href="#">NFL</a>
+            <a href="#">综合</a>
+            <a href="#">社区</a>
+            <a href="#">欧洲杯</a>
+            <a href="#">下载</a>
+        </nav>
+    </header>
+    <!--VIDEO-->
+    <section class="videoArea">
+        <!--只有当VIDEO的 PRELOAD="NONE"的时候 我们设置的POSTER才可以展示-->
+        <video src="http://211.162.54.24/sports.tc.qq.com/Aor7QHm9HGkar5dBjw22GZgla5OnywFQLFQZXeWIFQKY/j0020cap1lk.mp4?vkey=65F2CD0E1BA528CC0124B3D3ACCB127B4D2C4AFD99A062B9CF0CA05B164504AB7DB12BF628D82B4D656D04319D9A40EAA6986E9A7D3D5F558FB687397C2220DE93B916FFA622E9A62B404966D222FD5AA42F8A278E2538DA2805F9509286ECD085990873D899A4DAF91ED57295F6802DFC69D1CFADCE2CD8&br=60&platform=2&fmt=auto&level=0&sdtfrom=v3010&guid=1c10f2dfa572302f9ea37858bd143c89"
+               controls preload="none" poster="img/poster.jpg"></video>
+    </section>
+    <!--MATCH INFO-->
+    <section class="matchInfo">
+
+    </section>
+    <!--MATCH LIST-->
+    <section class="matchList">
+        <ul class="clear">
+
+        </ul>
+    </section>
+</section>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/iscroll-5.1.3.min.js"></script>
+<script type="text/javascript" src="js/ejs.min.js"></script>
+<script type="text/template" id="matchInfoTemplate">
+    <div class="top">
+        <div class="home">
+            <img src="<%=matchInfo.leftBadge%>" alt="">
+            <span><%=matchInfo.leftGoal%></span>
+        </div>
+        <div class="time"><%=matchInfo.startTime.formatTime('{1}月{2}日 {3}:{4}')%></div>
+        <div class="away">
+            <span><%=matchInfo.rightGoal%></span>
+            <img src="<%=matchInfo.rightBadge%>" alt="">
+        </div>
+    </div>
+    <div class="middle"><span></span></div>
+    <div class="bottom">
+        <span class="home" type="1"><%=matchInfo.leftSupport%></span>
+        <span class="type"><%=matchInfo.matchDesc%></span>
+        <span class="away" type="2"><%=matchInfo.rightSupport%></span>
+    </div>
+</script>
+<script type="text/template" id="matchListTemplate">
+    <%$.each(matchList,function(index,item){%>
+    <li class=<%=index===0?'bg':''%>>
+        <div>
+            <img src="<%=item.pic%>" alt="">
+            <span><%=item.duration.substring(item.duration.indexOf(':')+1)%></span>
+        </div>
+        <p><%=item.title%></p>
+    </li>
+    <%})%>
+</script>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

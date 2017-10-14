@@ -1,0 +1,227 @@
+@import (reference) "public";
+
+html {
+  font-size: 100px;
+}
+
+html, body {
+  width: 100%;
+  color: extract(@colorList, 1);
+  background: extract(@colorList, 3);
+  overflow-x: hidden;
+}
+
+a, a:hover, a:active, a:visited, a:target {
+  display: block;
+  color: extract(@colorList, 1);
+  text-decoration: none;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 6.4rem;
+}
+
+.header {
+  .con {
+    height: .88rem;
+    line-height: .88rem;
+    font-size: .32rem;
+    color: extract(@colorList, 4);
+    background: extract(@colorList, 5);
+    .logo, .type {
+      float: left;
+    }
+    .menu, .login {
+      float: right;
+    }
+    .logo {
+      padding-left: .7rem;
+      width: 1.44rem;
+      border-right: .02rem solid #066dc4;
+      font-size: .32rem;
+      font-weight: normal;
+      background: url("@{url}/icon-logo.png") no-repeat .1rem center;
+      -webkit-background-size: .48rem;
+      background-size: .48rem;
+    }
+    .type {
+      padding: 0 .2rem;
+      border-left: .02rem solid #61b2f6;
+    }
+    .login {
+      padding: 0 .3rem;
+    }
+    .menu {
+      width: .88rem;
+      height: .88rem;
+      background: url("@{url}/btn-nav-fold.png") no-repeat center center;
+      -webkit-background-size: .48rem;
+      background-size: .48rem .48rem;
+    }
+  }
+  .nav {
+    padding: 0 0; //.1rem 0
+    height: 0; //2.22rem
+    overflow: hidden;
+    .transition(@property: height,@duration: .3s);
+    a {
+      float: left;
+      width: 16%;
+      height: .74rem;
+      line-height: .74rem;
+      text-align: center;
+      font-size: .32rem;
+      &:nth-child(6n+1) {
+        margin-left: 2%;
+      }
+    }
+  }
+}
+
+.videoArea {
+  height: 3.6rem;
+  background: #000;
+  video {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.matchInfo {
+  box-sizing: border-box;
+  padding: .3rem;
+  overflow: hidden;
+  background: extract(@colorList, 4);
+  .top {
+    height: .6rem;
+    line-height: .6rem;
+    .home, .away {
+      float: left;
+      width: 33%;
+      img {
+        display: inline-block;
+        width: .64rem;
+        height: .6rem;
+        vertical-align: top;
+      }
+      span {
+        display: inline-block;
+        font-size: .4rem;
+        vertical-align: top;
+      }
+    }
+    .home {
+      span {
+        margin-left: .24rem;
+      }
+    }
+    .time {
+      float: left;
+      width: 34%;
+      font-size: .24rem;
+      color: extract(@colorList, 2);
+      text-align: center;
+    }
+    .away {
+      text-align: right;
+      span {
+        margin-right: .24rem;
+      }
+    }
+  }
+  .middle {
+    position: relative;
+    margin: .2rem auto;
+    height: .04rem;
+    background: extract(@colorList, 5);
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: .04rem;
+      background: extract(@colorList, 6);
+      .transition(@duration: .5s)
+    }
+  }
+  .bottom {
+    height: .4rem;
+    line-height: .4rem;
+    text-align: center;
+    span {
+      float: left;
+      width: 34%;
+      font-size: .24rem;
+      color: extract(@colorList, 2);
+    }
+    .type {
+      width: 32%;
+    }
+    .home {
+      background: url("@{url}/support-left.png") no-repeat left center;
+      -webkit-background-size: .24rem;
+      background-size: .24rem;
+      &.bg {
+        color: extract(@colorList, 6);
+        background: url("@{url}/support-red.png") no-repeat left center;
+        -webkit-background-size: .24rem;
+        background-size: .24rem;
+      }
+    }
+    .away {
+      background: url("@{url}/support-right.png") no-repeat right center;
+      -webkit-background-size: .24rem;
+      background-size: .24rem;
+      &.bg {
+        color: extract(@colorList, 5);
+        background: url("@{url}/support-blue.png") no-repeat right center;
+        -webkit-background-size: .24rem;
+        background-size: .24rem;
+      }
+    }
+  }
+}
+
+.matchList {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .2rem .3rem;
+  background: extract(@colorList, 4);
+  overflow: hidden;
+  li {
+    float: left;
+    margin-right: .2rem;
+    width: 2.2rem;
+    overflow: hidden;
+    div {
+      position: relative;
+      width: 100%;
+      height: 1.24rem;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      span {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: .08rem;
+        height: .31rem;
+        line-height: .31rem;
+        color: extract(@colorList, 4);
+        background: rgba(0, 0, 0, .5);
+      }
+    }
+    p{
+      font-size: .24rem;
+      line-height:.3rem;
+    }
+    &.bg{
+      p{
+        color: extract(@colorList,6);
+      }
+    }
+  }
+}

@@ -1,0 +1,224 @@
+html {
+  font-size: 100px;
+}
+html,
+body {
+  width: 100%;
+  color: #555;
+  background: #ebf0f5;
+  overflow-x: hidden;
+}
+a,
+a:hover,
+a:active,
+a:visited,
+a:target {
+  display: block;
+  color: #555;
+  text-decoration: none;
+}
+.main {
+  margin: 0 auto;
+  max-width: 6.4rem;
+}
+.header .con {
+  height: .88rem;
+  line-height: .88rem;
+  font-size: .32rem;
+  color: #fff;
+  background: #1c90f2;
+}
+.header .con .logo,
+.header .con .type {
+  float: left;
+}
+.header .con .menu,
+.header .con .login {
+  float: right;
+}
+.header .con .logo {
+  padding-left: .7rem;
+  width: 1.44rem;
+  border-right: .02rem solid #066dc4;
+  font-size: .32rem;
+  font-weight: normal;
+  background: url("../img/icon-logo.png") no-repeat 0.1rem center;
+  -webkit-background-size: .48rem;
+  background-size: .48rem;
+}
+.header .con .type {
+  padding: 0 .2rem;
+  border-left: .02rem solid #61b2f6;
+}
+.header .con .login {
+  padding: 0 .3rem;
+}
+.header .con .menu {
+  width: .88rem;
+  height: .88rem;
+  background: url("../img/btn-nav-fold.png") no-repeat center center;
+  -webkit-background-size: .48rem;
+  background-size: .48rem .48rem;
+}
+.header .nav {
+  padding: 0 0;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.3s linear 0s;
+  transition: height 0.3s linear 0s;
+}
+.header .nav a {
+  float: left;
+  width: 16%;
+  height: .74rem;
+  line-height: .74rem;
+  text-align: center;
+  font-size: .32rem;
+}
+.header .nav a:nth-child(6n+1) {
+  margin-left: 2%;
+}
+.videoArea {
+  height: 3.6rem;
+  background: #000;
+}
+.videoArea video {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.matchInfo {
+  box-sizing: border-box;
+  padding: .3rem;
+  overflow: hidden;
+  background: #fff;
+}
+.matchInfo .top {
+  height: .6rem;
+  line-height: .6rem;
+}
+.matchInfo .top .home,
+.matchInfo .top .away {
+  float: left;
+  width: 33%;
+}
+.matchInfo .top .home img,
+.matchInfo .top .away img {
+  display: inline-block;
+  width: .64rem;
+  height: .6rem;
+  vertical-align: top;
+}
+.matchInfo .top .home span,
+.matchInfo .top .away span {
+  display: inline-block;
+  font-size: .4rem;
+  vertical-align: top;
+}
+.matchInfo .top .home span {
+  margin-left: .24rem;
+}
+.matchInfo .top .time {
+  float: left;
+  width: 34%;
+  font-size: .24rem;
+  color: #999;
+  text-align: center;
+}
+.matchInfo .top .away {
+  text-align: right;
+}
+.matchInfo .top .away span {
+  margin-right: .24rem;
+}
+.matchInfo .middle {
+  position: relative;
+  margin: .2rem auto;
+  height: .04rem;
+  background: #1c90f2;
+}
+.matchInfo .middle span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: .04rem;
+  background: #f82d2d;
+  -webkit-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s;
+}
+.matchInfo .bottom {
+  height: .4rem;
+  line-height: .4rem;
+  text-align: center;
+}
+.matchInfo .bottom span {
+  float: left;
+  width: 34%;
+  font-size: .24rem;
+  color: #999;
+}
+.matchInfo .bottom .type {
+  width: 32%;
+}
+.matchInfo .bottom .home {
+  background: url("../img/support-left.png") no-repeat left center;
+  -webkit-background-size: .24rem;
+  background-size: .24rem;
+}
+.matchInfo .bottom .home.bg {
+  color: #f82d2d;
+  background: url("../img/support-red.png") no-repeat left center;
+  -webkit-background-size: .24rem;
+  background-size: .24rem;
+}
+.matchInfo .bottom .away {
+  background: url("../img/support-right.png") no-repeat right center;
+  -webkit-background-size: .24rem;
+  background-size: .24rem;
+}
+.matchInfo .bottom .away.bg {
+  color: #1c90f2;
+  background: url("../img/support-blue.png") no-repeat right center;
+  -webkit-background-size: .24rem;
+  background-size: .24rem;
+}
+.matchList {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .2rem .3rem;
+  background: #fff;
+  overflow: hidden;
+}
+.matchList li {
+  float: left;
+  margin-right: .2rem;
+  width: 2.2rem;
+  overflow: hidden;
+}
+.matchList li div {
+  position: relative;
+  width: 100%;
+  height: 1.24rem;
+}
+.matchList li div img {
+  width: 100%;
+  height: 100%;
+}
+.matchList li div span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: .08rem;
+  height: .31rem;
+  line-height: .31rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+}
+.matchList li p {
+  font-size: .24rem;
+  line-height: .3rem;
+}
+.matchList li.bg p {
+  color: #f82d2d;
+}
